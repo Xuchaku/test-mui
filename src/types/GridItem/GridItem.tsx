@@ -1,4 +1,3 @@
-import { FunctionComponent, ReactElement } from "react";
 type GridItem = {
   type: "plug" | "content";
   bg: string;

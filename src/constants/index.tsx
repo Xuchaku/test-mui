@@ -8,6 +8,10 @@ import { styled } from "@mui/material/styles";
 import Logo from "../components/Logo/Logo";
 import Menu from "../components/Menu/Menu";
 import GridItem from "../types/GridItem/GridItem";
+import CardSubmit from "../components/CardSubmit/CardSubmit";
+import CardSlider from "../components/CardSlider/CardSlider";
+import CardMinor from "../components/CardMinor/CardMinor";
+import CardInfo from "../components/CardInfo/CardInfo";
 
 export const MENUS_ITEMS: MenuItem[] = [
   { src: FacebookIcon, color: "white", size: 24 },
@@ -28,8 +32,8 @@ interface ItemStyleProps {
 }
 
 export const Item = styled(Box)<ItemStyleProps>((props) => ({
-  background: props.bg || "peru",
   height: 293,
+  background: props.bg || "peru",
 }));
 
 export const HEAD_ITEMS: GridItem[] = [
@@ -56,19 +60,97 @@ export const HEAD_ITEMS: GridItem[] = [
   { type: "plug", bg: DARK_COLOR, size: { xs: 2 }, children: null },
 ];
 
-// export const CONTENT_SECTION_FIRST: GridItem[] = [
-//   { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
-//   {
-//     type: "content",
-//     bg: YELLOW_COLOR,
-//     size: { xs: 4 },
-//     propsChildren: {
-//       header: "BULDINT THE WORLD AROUND US",
-//       text: "Still other clients have",
-//       buttonText: "Read More",
-//     },
-//     children: <Logo />,
-//   },
-//   { type: "content", bg: DARK_COLOR, size: { xs: 2 }, children: <Menu /> },
-//   { type: "plug", bg: DARK_COLOR, size: { xs: 2 }, children: null },
-// ];
+export const CONTENT_SECTION_FIRST: GridItem[] = [
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: YELLOW_COLOR,
+    size: { xs: 4 },
+    propsChildren: {
+      header: "BULDINT THE WORLD AROUND US",
+      text: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
+      buttonText: "READ MORE",
+    },
+    children: CardSubmit,
+  },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardSlider,
+    propsChildren: {
+      startNum: 1,
+      endNum: 3,
+    },
+  },
+  { type: "plug", bg: DARK_COLOR, size: { xs: 2 }, children: null },
+
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  { type: "plug", bg: BLUE_COLOR, size: { xs: 2 }, children: CardMinor },
+  { type: "plug", bg: DARK_COLOR, size: { xs: 2 }, children: null },
+  { type: "plug", bg: DARK_COLOR, size: { xs: 2 }, children: null },
+];
+
+export const CONTENT_SECTION_MAIN: GridItem[] = [
+  { type: "plug", bg: WHITENESS_PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardInfo,
+    propsChildren: {
+      header: "OUR SERVICES",
+      text: "Our mission is to provide the highest level of service for our client-partners from concept through construction.",
+    },
+  },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardInfo,
+    propsChildren: {
+      header: "General Contracting",
+      text: "The oil company Shell invented a new 'matching-half' promotion called 'Make Money*. Each time people bought a Shell product they were given half of a bank note. If they got the other half of the note they could get the money for the two halves.",
+    },
+  },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  { type: "plug", bg: WHITENESS_PLUG_COLOR, size: { xs: 2 }, children: null },
+
+  { type: "plug", bg: WHITENESS_PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardSlider,
+    propsChildren: {
+      startNum: 3,
+      endNum: 6,
+    },
+  },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardInfo,
+    propsChildren: {
+      header: "Project design and engeneering",
+      text: "Our mission is to provide the highest level of service for our client-partners from concept through construction. The oil company Shell invented a new.",
+    },
+  },
+  { type: "plug", bg: PLUG_COLOR, size: { xs: 2 }, children: null },
+  {
+    type: "content",
+    bg: WHITE_COLOR,
+    size: { xs: 2 },
+    children: CardInfo,
+    propsChildren: {
+      header: "Capital impovements",
+      text: "Our mission is to provide the highest level of service for our client-partners from concept through construction.",
+    },
+  },
+  { type: "plug", bg: WHITENESS_PLUG_COLOR, size: { xs: 2 }, children: null },
+];

@@ -1,11 +1,11 @@
-import React from "react";
 import { Grid } from "@mui/material";
-import { Item, HEAD_ITEMS } from "../../constants";
+import React from "react";
+import { CONTENT_SECTION_MAIN, Item } from "../../constants";
 
-const Head = () => {
+const MainFeatures = () => {
   return (
     <>
-      {HEAD_ITEMS.map((item) => {
+      {CONTENT_SECTION_MAIN.map((item) => {
         const CurrentElement = item.children;
         const currentProps = item.propsChildren;
         return (
@@ -15,11 +15,6 @@ const Head = () => {
             ) : (
               <Item bg={item.bg}></Item>
             )}
-            {/* <Item bg={item.bg}>
-              {CurrentElement ? (
-                <CurrentElement {...currentProps}></CurrentElement>
-              ) : null}
-            </Item> */}
           </Grid>
         );
       })}
@@ -27,4 +22,4 @@ const Head = () => {
   );
 };
 
-export default Head;
+export default MainFeatures;

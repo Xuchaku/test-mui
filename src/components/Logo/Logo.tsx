@@ -1,5 +1,6 @@
 import LogoDevIcon from "@mui/icons-material/LogoDev";
 import React from "react";
+import { Item } from "../../constants";
 
 type LogoTypeProps = {
   size: number;
@@ -8,7 +9,11 @@ type LogoTypeProps = {
 
 const Logo = (props: LogoTypeProps) => {
   const { size, color } = props;
-  return <LogoDevIcon sx={{ fontSize: size, color: color }}></LogoDevIcon>;
+  return (
+    <Item>
+      <LogoDevIcon sx={{ fontSize: size, color: color }}></LogoDevIcon>
+    </Item>
+  );
 };
 
 export default Logo;
