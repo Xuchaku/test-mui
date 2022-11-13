@@ -1,15 +1,14 @@
-import { SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-import React, { FC } from "react";
+import LogoDevIcon from "@mui/icons-material/LogoDev";
+import React from "react";
 
-type LogoPropsType = {
-  src: OverridableComponent<SvgIconTypeMap>;
+type LogoTypeProps = {
   size: number;
   color: string;
 };
 
-const Logo: FC<LogoPropsType> = ({ src: Logo, size, color }) => {
-  return <Logo sx={{ fontSize: size, color }} />;
+const Logo = (props: LogoTypeProps) => {
+  const { size, color } = props;
+  return <LogoDevIcon sx={{ fontSize: size, color: color }}></LogoDevIcon>;
 };
 
 export default Logo;

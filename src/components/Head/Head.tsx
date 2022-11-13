@@ -1,23 +1,23 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import Logo from "../Logo/Logo";
-import LogoDevIcon from "@mui/icons-material/LogoDev";
-import Menu from "../Menu/Menu";
-import { MENUS_ITEMS, Item, DARK_COLOR, PLUG_COLOR } from "../../constants";
+import { Item, HEAD_ITEMS } from "../../constants";
 
 const Head = () => {
   return (
     <>
-      <Grid item xs={9}>
-        <Item bg={PLUG_COLOR}>
-          <Logo src={LogoDevIcon} size={120} color={"#282828"}></Logo>
-        </Item>
-      </Grid>
-      <Grid item xs={3}>
-        <Item bg={DARK_COLOR}>
-          <Menu items={MENUS_ITEMS} />
-        </Item>
-      </Grid>
+      {HEAD_ITEMS.map((item) => {
+        const CurrentElement = item.children;
+        const currentProps = item.propsChildren;
+        return (
+          <Grid item {...item.size}>
+            <Item bg={item.bg}>
+              {CurrentElement ? (
+                <CurrentElement {...currentProps}></CurrentElement>
+              ) : null}
+            </Item>
+          </Grid>
+        );
+      })}
     </>
   );
 };

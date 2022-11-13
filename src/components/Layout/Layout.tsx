@@ -5,13 +5,10 @@ import Head from "../Head/Head";
 import Main from "../Main/Main";
 
 const Layout = () => {
+  console.log("lay");
   return (
-    <Grid container justifyContent="center">
-      <Grid container item xs={8}>
-        <Head />
-        <Main />
-        <Footer />
-      </Grid>
+    <Grid container xs={12}>
+      <Head></Head>
     </Grid>
   );
 };
