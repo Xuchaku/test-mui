@@ -1,17 +1,23 @@
 import { Stack } from "@mui/material";
 import React from "react";
-import { Item } from "../../constants";
-import MenuItem from "../../types/MenuItem/MenuItem";
+import { Item } from "../../../constants";
+import MenuItem from "../../../types/MenuItem/MenuItem";
 
 type MenuPropsType = {
   items: MenuItem[];
 };
 
-const Menu = (props: MenuPropsType) => {
+const CardMenu = (props: MenuPropsType) => {
   const { items } = props;
   return (
-    <Item>
-      <Stack direction="row" spacing={2}>
+    <>
+      <Stack
+        direction="row"
+        sx={{ height: "100%", py: 5 }}
+        alignItems={"top"}
+        justifyContent={"flex-end"}
+        spacing={2}
+      >
         {items.map((item) => {
           const SvgIcon = item.src;
           return (
@@ -19,8 +25,8 @@ const Menu = (props: MenuPropsType) => {
           );
         })}
       </Stack>
-    </Item>
+    </>
   );
 };
 
-export default Menu;
+export default CardMenu;

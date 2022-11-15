@@ -1,30 +1,10 @@
 import React from "react";
 import { Grid } from "@mui/material";
 import { Item, HEAD_ITEMS } from "../../constants";
+import { renderCards } from "../../utils";
 
 const Head = () => {
-  return (
-    <>
-      {HEAD_ITEMS.map((item) => {
-        const CurrentElement = item.children;
-        const currentProps = item.propsChildren;
-        return (
-          <Grid item {...item.size}>
-            {CurrentElement ? (
-              <CurrentElement {...currentProps}></CurrentElement>
-            ) : (
-              <Item bg={item.bg}></Item>
-            )}
-            {/* <Item bg={item.bg}>
-              {CurrentElement ? (
-                <CurrentElement {...currentProps}></CurrentElement>
-              ) : null}
-            </Item> */}
-          </Grid>
-        );
-      })}
-    </>
-  );
+  return <>{renderCards(HEAD_ITEMS)}</>;
 };
 
 export default Head;

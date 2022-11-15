@@ -3,7 +3,7 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import React from "react";
 import Box from "@mui/material/Box";
-import { Item } from "../../constants";
+import { Item } from "../../../constants";
 
 type CardSliderPropsType = {
   startNum: number;
@@ -13,7 +13,7 @@ type CardSliderPropsType = {
 const CardSlider = (props: CardSliderPropsType) => {
   const { startNum, endNum } = props;
   return (
-    <Item sx={{ py: 3, px: 2 }}>
+    <>
       <Stack
         alignItems={"center"}
         justifyContent={"center"}
@@ -22,12 +22,12 @@ const CardSlider = (props: CardSliderPropsType) => {
       >
         <ArrowLeftIcon sx={{ fontSize: 80 }}></ArrowLeftIcon>
         <Stack direction={"row"}>
-          <Typography variant="h4">{startNum}</Typography>
-          <Typography>/{endNum}</Typography>
+          <Typography variant="h4">0{startNum}</Typography>
+          <Typography variant="body2">/0{endNum}</Typography>
         </Stack>
         <ArrowRightIcon sx={{ fontSize: 80 }}></ArrowRightIcon>
       </Stack>
-    </Item>
+    </>
   );
 };
 
