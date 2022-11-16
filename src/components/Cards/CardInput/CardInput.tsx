@@ -1,6 +1,6 @@
 import { Input, Stack } from "@mui/material";
 import React from "react";
-import { Item } from "../../../constants";
+import { Item, WHITE_COLOR } from "../../../constants";
 import SearchIcon from "@mui/icons-material/Search";
 
 const CardInput = () => {
@@ -16,7 +16,7 @@ const CardInput = () => {
           sx={{ py: 1, px: 2, width: "60%" }}
           defaultValue=""
           placeholder="What you're looking for"
-          endAdornment={<SearchIcon></SearchIcon>}
+          endAdornment={<SearchIcon sx={{ color: WHITE_COLOR }}></SearchIcon>}
         />
       </Stack>
     </>

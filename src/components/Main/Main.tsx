@@ -14,8 +14,8 @@ const Main = () => {
   const gridWidth = 4;
   const firstSection2 = CONTENT_SECTION_LAST.slice(0, 2);
   const firstSection = CONTENT_SECTION_LAST.slice(2, 3);
-  const secondSection = CONTENT_SECTION_LAST.slice(3, 7);
-  const lastSection = CONTENT_SECTION_LAST.slice(7);
+  const secondSection = CONTENT_SECTION_LAST.slice(3);
+  console.log(firstSection);
   return (
     <>
       {renderCards(CONTENT_SECTION_MAIN)}
@@ -25,12 +25,12 @@ const Main = () => {
       <Grid container item xs={2}>
         {renderCards(firstSection, 2)}
       </Grid>
-      <Grid container item xs={4}>
-        {renderCards(secondSection, 4)}
+      <Grid container item xs={8}>
+        {renderCards(secondSection, 8)}
       </Grid>
-      <Grid container item xs={4}>
+      {/* <Grid container item xs={4}>
         {renderCards(lastSection, 4)}
-      </Grid>
+      </Grid> */}
     </>
   );
 };

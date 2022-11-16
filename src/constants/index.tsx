@@ -35,10 +35,11 @@ export const MENUS_ITEMS: MenuItem[] = [
 
 export const PLUG_COLOR = "#D7D7D7";
 export const WHITENESS_PLUG_COLOR = "#F5F5F5";
-export const WHITE_COLOR = "#fffff";
+export const WHITE_COLOR = "#ffffff";
 export const DARK_COLOR = "#282828";
 export const YELLOW_COLOR = "#FFE400";
 export const BLUE_COLOR = "#2197D7";
+export const GRAY_COLOR = "#6C6C6C";
 
 interface ItemStyleProps {
   styles?: { [key: string]: string };
@@ -48,9 +49,6 @@ interface ItemStyleProps {
 export const Item = styled(Box)<ItemStyleProps>((props) => ({
   height: "100%",
   minHeight: 293,
-  //   height: "100%",
-  //   height: "auto",
-  // background: props.styles.backgroundColor || "peru",
 }));
 
 export const HEAD_ITEMS: GridItem[] = [
@@ -102,6 +100,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
       header: "BULDINT THE WORLD AROUND US",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
       buttonText: "READ MORE",
+      buttonBackground: DARK_COLOR,
     },
     children: CardSubmit,
   },
@@ -273,6 +272,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
     propsChildren: {
       text: "DOWNLOAD PRICE",
       src: PictureAsPdfIcon,
+      darkText: true,
     },
   },
   {
@@ -320,6 +320,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
       header: "YOUR BUILDING IS IN GOOD HANDS",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design. Our mission is to provide the highest level.",
       buttonText: "ABOUT COMPANY",
+      buttonBackground: DARK_COLOR,
     },
     children: CardSubmit,
   },
@@ -453,6 +454,7 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
       header: "Contemporary Villa",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
       buttonText: "VIEW PROJECT",
+      buttonBackground: YELLOW_COLOR,
     },
     children: CardSubmit,
   },
@@ -470,6 +472,24 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
     children: null,
   },
   {
+    type: "content",
+    styles: { backgroundColor: YELLOW_COLOR, py: 3, px: 2 },
+    size: { xs: 2 },
+    children: CardMinor,
+    propsChildren: {
+      text: "WORK WITH US",
+      src: SettingsInputCompositeIcon,
+      darkText: true,
+    },
+  },
+  {
+    type: "plug",
+    styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
+    size: { xs: 2 },
+    children: null,
+  },
+
+  {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
     size: { xs: 2 },
@@ -485,23 +505,6 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
       endNum: 9,
     },
   },
-
-  {
-    type: "content",
-    styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
-    children: CardMinor,
-    propsChildren: {
-      text: "WORK WITH US",
-      src: SettingsInputCompositeIcon,
-    },
-  },
-  {
-    type: "plug",
-    styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
-    children: null,
-  },
   {
     type: "content",
     styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
@@ -515,31 +518,3 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
     children: null,
   },
 ];
-
-// export const CONTENT_SECTION_MAIN: GridItem[] = [
-
-// ];
-
-// export const CONTENT_SECTION_MAIN_TWO: GridItem[] = [
-//   { type: "plug", styles: {backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2}, size: { xs: 2 }, children: null },
-//   {
-//     type: "content",
-//     styles: {backgroundColor: YELLOW_COLOR, py: 3, px: 2},
-//     size: { xs: 2 },
-//     children: CardMinor,
-//     propsChildren: {
-//       text: "DOWNLOAD PRICE",
-//       src: PictureAsPdfIcon,
-//     },
-//   },
-//   {
-//     type: "content",
-//     styles: {backgroundColor: BLUE_COLOR, py: 3, px: 2},
-//     size: { xs: 2 },
-//     children: CardMinor,
-//     propsChildren: {
-//       text: "CONTACT US",
-//       src: MyLocationIcon,
-//     },
-//   },
-// ];

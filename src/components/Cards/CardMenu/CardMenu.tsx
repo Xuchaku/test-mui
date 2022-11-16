@@ -16,7 +16,7 @@ const CardMenu = (props: MenuPropsType) => {
         sx={{ height: "100%", py: 5 }}
         alignItems={"top"}
         justifyContent={"flex-end"}
-        spacing={2}
+        spacing={4}
       >
         {items.map((item) => {
           const SvgIcon = item.src;

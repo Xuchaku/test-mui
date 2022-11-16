@@ -22,7 +22,7 @@ const CardFeedBack = (props: CardFeedBackPropsType) => {
         sx={{ height: "100%" }}
       >
         <Box sx={{ width: 50, height: 50, background: "black" }}></Box>
-        <Typography variant={"h4"}>{header}</Typography>
+        <Typography variant={"h5"}>{header}</Typography>
         <Rating name="read-only" value={value} readOnly />
         <Typography align={"center"} variant={"body2"}>
           {text}

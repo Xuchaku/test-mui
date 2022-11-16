@@ -22,8 +22,8 @@ const CardSlider = (props: CardSliderPropsType) => {
       >
         <ArrowLeftIcon sx={{ fontSize: 80 }}></ArrowLeftIcon>
         <Stack direction={"row"}>
-          <Typography variant="h4">0{startNum}</Typography>
-          <Typography variant="body2">/0{endNum}</Typography>
+          <Typography variant="h3">0{startNum}</Typography>
+          <Typography variant="h6">/0{endNum}</Typography>
         </Stack>
         <ArrowRightIcon sx={{ fontSize: 80 }}></ArrowRightIcon>
       </Stack>

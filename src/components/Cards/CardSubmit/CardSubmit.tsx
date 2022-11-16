@@ -1,15 +1,21 @@
 import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
-import { DARK_COLOR, Item } from "../../../constants";
+import {
+  DARK_COLOR,
+  Item,
+  WHITE_COLOR,
+  YELLOW_COLOR,
+} from "../../../constants";
 type CardSubmitProps = {
   header: string;
   text: string;
   buttonText: string;
+  buttonBackground: string;
 };
 
 const CardSubmit = (props: CardSubmitProps) => {
-  const { header, text, buttonText } = props;
+  const { header, text, buttonText, buttonBackground } = props;
   return (
     <>
       <Typography sx={{ width: "60%" }} variant={"h4"}>
@@ -17,7 +23,18 @@ const CardSubmit = (props: CardSubmitProps) => {
       </Typography>
       <HorizontalRuleIcon sx={{ fontSize: 80 }}></HorizontalRuleIcon>
       <Typography variant={"subtitle1"}>{text}</Typography>
-      <Button sx={{ borderRadius: 0 }} variant="contained">
+      <Button
+        sx={{
+          borderRadius: 0,
+          mt: 4,
+          px: 3,
+          py: 2,
+          mb: 3,
+          background: buttonBackground,
+          color: buttonBackground == YELLOW_COLOR ? DARK_COLOR : WHITE_COLOR,
+        }}
+        variant="contained"
+      >
         {buttonText}
       </Button>
     </>

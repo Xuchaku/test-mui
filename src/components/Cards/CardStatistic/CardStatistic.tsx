@@ -13,10 +13,12 @@ const CardStatistic = (props: CardStatisticPropsType) => {
   const { text, src: ElemSvg, value } = props;
   return (
     <>
-      <Box sx={{ background: YELLOW_COLOR, p: 2, width: 120 }}>
-        <ElemSvg sx={{ fontSize: 80, color: BLUE_COLOR }}></ElemSvg>
+      <Box sx={{ background: YELLOW_COLOR, p: 2, width: 100 }}>
+        <ElemSvg sx={{ fontSize: 60, color: BLUE_COLOR }}></ElemSvg>
       </Box>
-      <Typography variant={"h3"}>{value}</Typography>
+      <Typography variant={"h3"} sx={{ mt: 5 }}>
+        {value}
+      </Typography>
       <Typography variant={"body2"}>{text}</Typography>
     </>
   );

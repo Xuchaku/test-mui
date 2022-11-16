@@ -1,44 +1,58 @@
 import { createTheme } from "@mui/material";
-import { DARK_COLOR } from "../constants";
+import {
+  BLUE_COLOR,
+  DARK_COLOR,
+  GRAY_COLOR,
+  PLUG_COLOR,
+  WHITE_COLOR,
+} from "../constants";
 
-// declare module '@mui/material/styles' {
-//     interface Theme {
-//       status: {
-//         danger: string;
-//       };
-//     }
-//     // allow configuration using `createTheme`
-//     interface ThemeOptions {
-//       status?: {
-//         danger?: string;
-//       };
-//     }
-//   }
 let theme = createTheme({
-  palette: {
-    primary: {
-      main: DARK_COLOR,
-    },
-    // secondary: {
-    //   light: "#ff0000",
-    //   main: "#ff0000",
-    //   dark: "#ff0000",
-    // },
-  },
   typography: {
+    h3: {
+      color: DARK_COLOR,
+    },
     h4: {
       color: DARK_COLOR,
     },
-    body2: {
+    h6: { color: DARK_COLOR },
+    subtitle1: {
       color: DARK_COLOR,
+    },
+    body2: {
+      color: GRAY_COLOR,
     },
   },
   components: {
-    MuiSvgIcon: {
+    MuiInput: {
+      styleOverrides: {
+        underline: {
+          "&:before": {
+            borderBottom: `2px solid ${WHITE_COLOR}`,
+          },
+          "&:after": {
+            borderBottom: `2px solid ${WHITE_COLOR}`,
+          },
+          "&:hover:not($disabled):not($focused):not($error):before": {
+            borderBottom: `2px solid ${WHITE_COLOR}`,
+          },
+        },
+        root: {
+          color: WHITE_COLOR,
+        },
+      },
+    },
+    MuiTextField: {
       styleOverrides: {
         root: {
-          color: DARK_COLOR,
+          color: BLUE_COLOR,
+          backgroundColor: WHITE_COLOR,
         },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {},
       },
     },
   },
