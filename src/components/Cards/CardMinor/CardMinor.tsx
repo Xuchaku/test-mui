@@ -1,6 +1,6 @@
-import { Stack, SvgIconTypeMap, Typography } from "@mui/material";
 import React from "react";
-import { DARK_COLOR, Item, WHITE_COLOR } from "../../../constants";
+import { Stack, SvgIconTypeMap, Typography } from "@mui/material";
+import { DARK_COLOR, WHITE_COLOR } from "../../../constants";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
 
 type CardMinorPropsType = {

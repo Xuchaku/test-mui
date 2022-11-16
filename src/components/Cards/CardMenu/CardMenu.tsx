@@ -1,6 +1,5 @@
-import { Stack } from "@mui/material";
 import React from "react";
-import { Item } from "../../../constants";
+import { Stack } from "@mui/material";
 import MenuItem from "../../../types/MenuItem/MenuItem";
 
 type MenuPropsType = {

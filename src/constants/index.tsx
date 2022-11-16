@@ -54,14 +54,14 @@ export const Item = styled(Box)<ItemStyleProps>((props) => ({
 export const HEAD_ITEMS: GridItem[] = [
   {
     type: "plug",
-    styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 6 },
+    size: { xl: 6 },
     children: CardLogo,
     propsChildren: {
       size: 120,
@@ -71,7 +71,7 @@ export const HEAD_ITEMS: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardMenu,
     propsChildren: {
       items: MENUS_ITEMS,
@@ -80,7 +80,7 @@ export const HEAD_ITEMS: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 ];
@@ -89,13 +89,13 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: YELLOW_COLOR, py: 3, px: 2 },
-    size: { xs: 4 },
+    size: { xl: 4 },
     propsChildren: {
       header: "BULDINT THE WORLD AROUND US",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
@@ -107,13 +107,13 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardSlider,
     propsChildren: {
       startNum: 1,
@@ -123,57 +123,57 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardMinor,
     propsChildren: { text: "COMPANY VIDEO", src: PlayCircleFilledIcon },
   },
   {
     type: "plug",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardInfo,
     propsChildren: {
       header: "OUR SERVICES",
@@ -183,13 +183,13 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardInfo,
     propsChildren: {
       header: "General Contracting",
@@ -199,26 +199,26 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardSlider,
     propsChildren: {
       startNum: 3,
@@ -228,7 +228,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardInfo,
     propsChildren: {
       header: "Project design and engeneering",
@@ -238,13 +238,13 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardInfo,
     propsChildren: {
       header: "Capital impovements",
@@ -254,20 +254,20 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: YELLOW_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardMinor,
     propsChildren: {
       text: "DOWNLOAD PRICE",
@@ -278,7 +278,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardMinor,
     propsChildren: {
       text: "CONTACT US",
@@ -288,7 +288,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: DARK_COLOR, py: 3, px: 2 },
-    size: { xs: 6 },
+    size: { xl: 6 },
     children: CardInput,
     propsChildren: {
       text: "CONTACT US",
@@ -298,13 +298,13 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 4 },
+    size: { xl: 4 },
     children: CardFeedBack,
     propsChildren: {
       value: 5,
@@ -315,7 +315,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 4 },
+    size: { xl: 4 },
     propsChildren: {
       header: "YOUR BUILDING IS IN GOOD HANDS",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design. Our mission is to provide the highest level.",
@@ -327,19 +327,19 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 4 },
+    size: { xl: 4 },
     children: CardFeedBack,
     propsChildren: {
       value: 5,
@@ -350,7 +350,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardStatistic,
     propsChildren: {
       src: BoltIcon,
@@ -361,7 +361,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardStatistic,
     propsChildren: {
       src: OpacityIcon,
@@ -372,19 +372,19 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardNews,
     propsChildren: {
       date: new Date(),
@@ -395,7 +395,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardFeedBack,
     propsChildren: {
       value: 5,
@@ -406,7 +406,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardStatistic,
     propsChildren: {
       src: SettingsIcon,
@@ -417,7 +417,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardStatistic,
     propsChildren: {
       src: LightbulbIcon,
@@ -428,7 +428,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 ];
@@ -437,19 +437,19 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     propsChildren: {
       header: "Contemporary Villa",
       text: "Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.Still other clients have reserved for capital improvement projects and will work directly with our Design and Engineering team.",
@@ -462,19 +462,19 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: YELLOW_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardMinor,
     propsChildren: {
       text: "WORK WITH US",
@@ -485,20 +485,20 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 
   {
     type: "plug",
     styles: { backgroundColor: PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
   {
     type: "content",
     styles: { backgroundColor: WHITE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardSlider,
     propsChildren: {
       startNum: 1,
@@ -508,13 +508,13 @@ export const CONTENT_SECTION_LAST: GridItem[] = [
   {
     type: "content",
     styles: { backgroundColor: BLUE_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: CardForm,
   },
   {
     type: "plug",
     styles: { backgroundColor: WHITENESS_PLUG_COLOR, py: 3, px: 2 },
-    size: { xs: 2 },
+    size: { xl: 2 },
     children: null,
   },
 ];

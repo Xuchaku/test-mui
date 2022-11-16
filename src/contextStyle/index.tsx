@@ -1,14 +1,10 @@
 import { createTheme } from "@mui/material";
-import {
-  BLUE_COLOR,
-  DARK_COLOR,
-  GRAY_COLOR,
-  PLUG_COLOR,
-  WHITE_COLOR,
-} from "../constants";
+import { BLUE_COLOR, DARK_COLOR, GRAY_COLOR, WHITE_COLOR } from "../constants";
+import Rubik from "./../assets/fonts/Rubik-Regular.ttf";
 
 let theme = createTheme({
   typography: {
+    fontFamily: "Rubik",
     h3: {
       color: DARK_COLOR,
     },
@@ -24,6 +20,16 @@ let theme = createTheme({
     },
   },
   components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+      @font-face {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Rubik'), local('Rubik-Regular'), url(${Rubik}) format('woff2');
+      }
+    `,
+    },
     MuiInput: {
       styleOverrides: {
         underline: {

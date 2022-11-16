@@ -1,5 +1,4 @@
 import React from "react";
-import { Item } from "../../../constants";
 import { Rating, Stack } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";

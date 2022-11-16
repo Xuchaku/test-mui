@@ -1,12 +1,7 @@
 import React from "react";
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
-import {
-  DARK_COLOR,
-  Item,
-  WHITE_COLOR,
-  YELLOW_COLOR,
-} from "../../../constants";
+import { DARK_COLOR, WHITE_COLOR, YELLOW_COLOR } from "../../../constants";
 type CardSubmitProps = {
   header: string;
   text: string;
@@ -29,7 +24,6 @@ const CardSubmit = (props: CardSubmitProps) => {
           mt: 4,
           px: 3,
           py: 2,
-          mb: 3,
           background: buttonBackground,
           color: buttonBackground == YELLOW_COLOR ? DARK_COLOR : WHITE_COLOR,
         }}

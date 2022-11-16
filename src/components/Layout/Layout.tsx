@@ -1,7 +1,5 @@
-import { Grid } from "@mui/material";
 import React from "react";
-import { Item } from "../../constants";
-import Footer from "../Footer/Footer";
+import { Grid } from "@mui/material";
 import Head from "../Head/Head";
 import Main from "../Main/Main";
 

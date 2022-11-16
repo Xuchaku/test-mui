@@ -1,7 +1,7 @@
 type GridItem = {
   type: "plug" | "content";
   styles: { [key: string]: string | number };
-  size: { xs: number };
+  size: { [key: string]: number };
   children: null | ((props: any) => JSX.Element);
   propsChildren?: any;
 };

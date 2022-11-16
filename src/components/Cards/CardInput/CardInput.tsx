@@ -1,6 +1,6 @@
-import { Input, Stack } from "@mui/material";
 import React from "react";
-import { Item, WHITE_COLOR } from "../../../constants";
+import { Input, Stack } from "@mui/material";
+import { WHITE_COLOR } from "../../../constants";
 import SearchIcon from "@mui/icons-material/Search";
 
 const CardInput = () => {

@@ -1,9 +1,7 @@
+import React from "react";
 import { Stack, Typography } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
-import React from "react";
-import Box from "@mui/material/Box";
-import { Item } from "../../../constants";
 
 type CardSliderPropsType = {
   startNum: number;

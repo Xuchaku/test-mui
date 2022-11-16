@@ -1,7 +1,7 @@
+import React from "react";
 import { Box, SvgIconTypeMap, Typography } from "@mui/material";
 import { OverridableComponent } from "@mui/material/OverridableComponent";
-import React from "react";
-import { BLUE_COLOR, Item, YELLOW_COLOR } from "../../../constants";
+import { BLUE_COLOR, YELLOW_COLOR } from "../../../constants";
 
 type CardStatisticPropsType = {
   text: string;

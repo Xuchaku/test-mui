@@ -1,6 +1,5 @@
 import { Grid } from "@mui/material";
 import Card from "../components/Cards/hoc/Card";
-import { Item } from "../constants";
 import GridItem from "../types/GridItem/GridItem";
 
 export const multiplySize = (obj: { [key: string]: number }, mult: number) => {

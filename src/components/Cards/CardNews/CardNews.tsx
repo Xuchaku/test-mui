@@ -1,8 +1,7 @@
 import React from "react";
-import { Item, PLUG_COLOR, WHITE_COLOR } from "../../../constants";
+import { PLUG_COLOR, WHITE_COLOR } from "../../../constants";
 import { Typography } from "@mui/material";
 import { format } from "fecha";
-import { WHITENESS_PLUG_COLOR } from "./../../../constants/index";
 
 type CardNewsPropsType = {
   date: Date;

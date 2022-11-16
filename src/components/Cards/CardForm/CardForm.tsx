@@ -1,5 +1,5 @@
 import React from "react";
-import { Item, WHITE_COLOR } from "../../../constants";
+import { WHITE_COLOR } from "../../../constants";
 import { Stack, TextField, Typography } from "@mui/material";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { Button } from "@mui/material";

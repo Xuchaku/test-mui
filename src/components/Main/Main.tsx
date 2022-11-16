@@ -1,17 +1,9 @@
 import React from "react";
 import { Grid } from "@mui/material";
-import {
-  CONTENT_SECTION_LAST,
-  CONTENT_SECTION_MAIN,
-  Item,
-  PLUG_COLOR,
-  WHITE_COLOR,
-  YELLOW_COLOR,
-} from "../../constants";
+import { CONTENT_SECTION_LAST, CONTENT_SECTION_MAIN } from "../../constants";
 import { renderCards } from "../../utils";
 
 const Main = () => {
-  const gridWidth = 4;
   const firstSection2 = CONTENT_SECTION_LAST.slice(0, 2);
   const firstSection = CONTENT_SECTION_LAST.slice(2, 3);
   const secondSection = CONTENT_SECTION_LAST.slice(3);
@@ -28,9 +20,6 @@ const Main = () => {
       <Grid container item xs={8}>
         {renderCards(secondSection, 8)}
       </Grid>
-      {/* <Grid container item xs={4}>
-        {renderCards(lastSection, 4)}
-      </Grid> */}
     </>
   );
 };
