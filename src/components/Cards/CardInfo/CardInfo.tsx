@@ -1,7 +1,6 @@
 import React from "react";
-import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import { Typography } from "@mui/material";
-
+import { TypographyAfterSvg } from "../../../constants";
 type CardInfoProps = {
   header: string;
   text: string;
@@ -12,11 +11,7 @@ const CardInfo = (props: CardInfoProps) => {
   return (
     <>
       <Typography variant={"h4"}>{header}</Typography>
-      <HorizontalRuleIcon
-        viewBox="0 0 24 24"
-        sx={{ fontSize: 80 }}
-      ></HorizontalRuleIcon>
-      <Typography variant={"subtitle1"}>{text}</Typography>
+      <TypographyAfterSvg variant={"subtitle1"}>{text}</TypographyAfterSvg>
     </>
   );
 };

@@ -56,11 +56,6 @@ let theme = createTheme({
         },
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        root: {},
-      },
-    },
   },
 });
 export default theme;

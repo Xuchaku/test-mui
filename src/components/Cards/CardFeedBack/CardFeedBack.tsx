@@ -2,6 +2,7 @@ import React from "react";
 import { Rating, Stack } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
+import { DARK_COLOR } from "../../../constants";
 
 type CardFeedBackPropsType = {
   value: number;
@@ -20,7 +21,7 @@ const CardFeedBack = (props: CardFeedBackPropsType) => {
         spacing={2}
         sx={{ height: "100%" }}
       >
-        <Box sx={{ width: 50, height: 50, background: "black" }}></Box>
+        <Box sx={{ width: 50, height: 50, background: DARK_COLOR }}></Box>
         <Typography variant={"h5"}>{header}</Typography>
         <Rating name="read-only" value={value} readOnly />
         <Typography align={"center"} variant={"body2"}>

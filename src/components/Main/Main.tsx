@@ -7,17 +7,17 @@ const Main = () => {
   const firstSection2 = CONTENT_SECTION_LAST.slice(0, 2);
   const firstSection = CONTENT_SECTION_LAST.slice(2, 3);
   const secondSection = CONTENT_SECTION_LAST.slice(3);
-  console.log(firstSection);
+  console.log(firstSection2);
   return (
     <>
       {renderCards(CONTENT_SECTION_MAIN)}
-      <Grid container item xs={2}>
+      <Grid container item xl={2}>
         {renderCards(firstSection2, 2)}
       </Grid>
-      <Grid container item xs={2}>
+      <Grid container item xl={2}>
         {renderCards(firstSection, 2)}
       </Grid>
-      <Grid container item xs={8}>
+      <Grid container item xl={8}>
         {renderCards(secondSection, 8)}
       </Grid>
     </>
