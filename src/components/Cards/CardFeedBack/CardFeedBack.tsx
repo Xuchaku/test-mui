@@ -1,18 +1,21 @@
 import React from "react";
-import { Rating, Stack } from "@mui/material";
+import { RadioGroup, Rating, Stack } from "@mui/material";
 import { Box } from "@mui/material";
 import { Typography } from "@mui/material";
-import { DARK_COLOR } from "../../../constants";
+import { DARK_COLOR, RadioCustom } from "../../../constants";
+import Variant from "../../../types/Variant/Variant";
 
 type CardFeedBackPropsType = {
   value: number;
   header: string;
   text: string;
   bg: string;
+  isRadio: boolean;
+  variants: Variant[];
 };
 
 const CardFeedBack = (props: CardFeedBackPropsType) => {
-  const { value, header, text } = props;
+  const { value, header, text, isRadio, variants } = props;
   return (
     <>
       <Stack
@@ -27,6 +30,21 @@ const CardFeedBack = (props: CardFeedBackPropsType) => {
         <Typography align={"center"} variant={"body2"}>
           {text}
         </Typography>
+        {isRadio && variants && (
+          <RadioGroup defaultValue={variants[0]} sx={{ mt: 6 }}>
+            <Stack direction={"row"} justifyContent={"flex-start"}>
+              {variants.map((variant) => {
+                return (
+                  <RadioCustom
+                    colorCustom={DARK_COLOR}
+                    value={variant}
+                    name="radio-buttons"
+                  />
+                );
+              })}
+            </Stack>
+          </RadioGroup>
+        )}
       </Stack>
     </>
   );

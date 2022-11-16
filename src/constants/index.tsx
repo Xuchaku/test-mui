@@ -10,7 +10,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import MenuIcon from "@mui/icons-material/Menu";
 import BoltIcon from "@mui/icons-material/Bolt";
-import { Box, Typography } from "@mui/material";
+import { Box, Radio, Typography } from "@mui/material";
 import SettingsInputCompositeIcon from "@mui/icons-material/SettingsInputComposite";
 import { styled } from "@mui/material/styles";
 import CardLogo from "../components/Cards/CardLogo/CardLogo";
@@ -65,6 +65,17 @@ export const TypographyAfterSvg = styled(Typography)((props) => ({
     width: 60,
     height: 6,
     background: DARK_COLOR,
+  },
+}));
+
+type RadioCustomPropsType = {
+  colorCustom: string;
+};
+
+export const RadioCustom = styled(Radio)<RadioCustomPropsType>((props) => ({
+  color: PLUG_COLOR,
+  "&.Mui-checked": {
+    color: props.colorCustom,
   },
 }));
 
@@ -366,6 +377,8 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
     propsChildren: {
       value: 5,
       header: "Tony SH. SHultz",
+      isRadio: true,
+      variants: [0, 1],
       text: "Our mission is to provide the highest level of service for our client-partners from concept through construction.Our mission is to provide the highest level of service for our client-partners from concept through construction.",
     },
   },
@@ -412,6 +425,7 @@ export const CONTENT_SECTION_MAIN: GridItem[] = [
       date: new Date(),
       header: "Projetc Design and Engeneering Services",
       comments: 23,
+      variants: [0, 1, 2],
     },
   },
   {
