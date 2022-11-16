@@ -27,6 +27,7 @@ import CardNews from "../components/Cards/CardNews/CardNews";
 import CardForm from "../components/Cards/CardForm/CardForm";
 import CardFooter from "../components/Cards/CardFooter/CardFooter";
 import Link from "../types/Link/Link";
+import RadioCustomStyle from "../types/RadioCustomStyle/RadioCustomStyle";
 
 export const MENUS_ITEMS: MenuItem[] = [
   { src: FacebookIcon, color: "white", size: 24 },
@@ -68,11 +69,7 @@ export const TypographyAfterSvg = styled(Typography)((props) => ({
   },
 }));
 
-type RadioCustomPropsType = {
-  colorCustom: string;
-};
-
-export const RadioCustom = styled(Radio)<RadioCustomPropsType>((props) => ({
+export const RadioCustom = styled(Radio)<RadioCustomStyle>((props) => ({
   color: PLUG_COLOR,
   "&.Mui-checked": {
     color: props.colorCustom,
